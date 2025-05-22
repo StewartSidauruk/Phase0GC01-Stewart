@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Ancizar Serif';
+    src: url('AncizarSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Ancizar Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.oppenheimer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: auto;
+    z-index: 2;
+}
+
+.name {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    font-size: 4vw;
+    position: absolute;
+    bottom: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.mainText {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 8vw;
+    position: absolute;
+    bottom: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
