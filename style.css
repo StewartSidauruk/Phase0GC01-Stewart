@@ -5,6 +5,17 @@
     font-style: normal;
 }
 
+@keyframes riseFade {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
 * {
     font-family: 'Ancizar Serif', serif;
     margin: 0;
@@ -37,29 +48,77 @@ main {
     z-index: 2;
 }
 
-.name {
+.text, .mainText {
+    animation: riseFade 1.5s ease-out forwards;
+}
+
+.text {
+    position: absolute;
     color: whitesmoke;
     display: flex;
     justify-content: center;
-    gap: 10vw;
-    font-size: 4vw;
+    gap: 20vw;
+    font-size: 5vw;
     position: absolute;
-    bottom: 38%;
+    bottom: 68%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 3;
+    z-index: 1;
     text-shadow: 2px 2px 6px #000000;
+    animation-delay: 0.5s;
 }
 
 .mainText {
     color: whitesmoke;
     text-align: center;
-    font-size: 8vw;
+    font-size: 10vw;
     position: absolute;
-    bottom: 26%;
+    bottom: 50%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 3;
+    z-index: 1;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
     font-weight: bold;
+    letter-spacing: 0.05em;
+    animation-delay: 1s;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    z-index: 999;
+    font-size: 28px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-right a {
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    font-size: 28px;
+}
+
+.nav-right a:hover {
+    color: #ffffff;
 }
