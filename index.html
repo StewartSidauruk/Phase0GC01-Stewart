@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...verylonghash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <title>Oppenheimer - Biography</title>
 </head>
 <body>
@@ -16,10 +18,10 @@
                 <span class="brand">Stewart Sidauruk</span>
             </div>
             <div class="nav-right">
-                <a href="#">ABOUT</a>
-                <a href="#">JOURNEY</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">CONTACT</a>
+                <a href="#about">ABOUT</a>
+                <a href="#journey">JOURNEY</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
             </div>
         </nav>
 
@@ -32,61 +34,62 @@
             </div>
             <p class="mainText">OPPENHEIMER</p>
         </div>
-        <section>
-            <p style="justify-content: center; display: flex; margin: 30px 0 30px 0; font-size: 5vw; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);"><strong>ABOUT</strong></p>
+        <section id ="about">
+            <p style="justify-content: center; display: flex; margin: 30px 0 30px 0; font-size: 5vw; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); " data-aos="fade-down"><strong>ABOUT</strong></p>
             <div class="about">
                 <div class="text-about">
-                    <h1>Julius Robert Oppenheimer</h1>
-                    <div style="font-size: 1.5vw; text-align: justify; margin-top: 20px;">
+                    <h1 data-aos="fade-up">Julius Robert Oppenheimer</h1>
+                    <h1 data-aos="fade-up">"The Father of the Atomic Bomb"</h1>
+                    <div style="font-size: 1.5vw; text-align: justify; margin-top: 20px;" data-aos="fade-up">
                         <p>J. Robert Oppenheimer was an American physicist best known for leading the Manhattan Project, which developed the first atomic bomb during World War II. Often called the "father of the atomic bomb," he played a key role in ending the war but later expressed deep regret over the weapon's destructive power.</p>
                         <p>After the war, Oppenheimer spoke out against nuclear arms and advocated for global control of atomic energy. His opposition to the arms race led to a political backlash, and in 1954, he lost his security clearance in a controversial hearing during the Red Scare.</p>
                         <p>Beyond science, Oppenheimer was a thinker who loved literature and philosophy, making his legacy both scientifically brilliant and morally complex.</p>
                     </div>
                     </div>
-                <img class="oppenheimer2" src="images/Oppenheimer2.jpg" alt="">
+                <img class="oppenheimer2" src="images/Oppenheimer2.jpg" alt="" data-aos="fade-up">
             </div>
         </section>
 
-        <section>
-            <h2 style="text-align: center; margin: 50px 0 20px; font-size: 5vw; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);">Journey</h2>
+        <section id="journey">
+            <h2 style="text-align: center; margin: 50px 0 20px; font-size: 5vw; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);" data-aos="fade-down">Journey</h2>
             <div class="journey-container">
-                <div class="journey-card">
+                <div class="journey-card" data-aos="fade-up">
                     <img src="images/earlyyear.jpg" alt="Early Years">
                     <h3>Early Years</h3>
                     <p>Born in 1904 in New York City, Oppenheimer grew up in a cultured and affluent Jewish family. He excelled academically and entered Harvard at 18.</p>
                 </div>
 
-                <div class="journey-card">
+                <div class="journey-card" data-aos="fade-down">
                     <img src="images/OppenheimerYoung.jpg" alt="Studies in Europe">
                     <h3>Studies in Europe</h3>
                     <p>He studied quantum physics at Cambridge and Göttingen, working with Max Born and meeting future luminaries like Werner Heisenberg.</p>
                 </div>
 
-                <div class="journey-card">
+                <div class="journey-card" data-aos="fade-down">
                     <img src="images/ManhattanProject.jpg" alt="Manhattan Project">
                     <h3>Manhattan Project</h3>
                     <p>In 1942, he became scientific director of the Manhattan Project at Los Alamos, overseeing the development of the atomic bomb.</p>
                 </div>
 
-                <div class="journey-card">
+                <div class="journey-card" data-aos="fade-up">
                     <img src="images/trinityTest.jpg" alt="Trinity Test">
                     <h3>Trinity Test</h3>
                     <p>On July 16, 1945, the first nuclear explosion was successfully tested in New Mexico—an event that marked the dawn of the atomic age.</p>
                 </div>
 
-                <div class="journey-card">
-                    <img src="images/NuclearBomb.webp" alt="Postwar Advocacy">
+                <div class="journey-card" data-aos="fade-up">
+                    <img src="images/post.jpg" alt="Postwar Advocacy">
                     <h3>Postwar Advocacy</h3>
                     <p>Haunted by the bomb’s power, he opposed the hydrogen bomb and advocated for arms control, challenging U.S. military policy.</p>
                 </div>
 
-                <div class="journey-card">
+                <div class="journey-card" data-aos="fade-up">
                     <img src="images/SecurityHearing.jpg" alt="Security Hearing">
                     <h3>Security Hearing</h3>
                     <p>In 1954, during the Red Scare, Oppenheimer’s clearance was revoked in a public hearing that questioned his loyalty and politics.</p>
                 </div>
 
-                <div class="journey-card">
+                <div class="journey-card" data-aos="fade-up">
                     <img src="images/FinalYears.jpg" alt="Final Years">
                     <h3>Final Years</h3>
                     <p>In his later years, he taught and reflected on science and ethics. In 1963, he received the Enrico Fermi Award. He died in 1967.</p>
@@ -94,33 +97,161 @@
             </div>
         </section>
 
-        <section>
-            <h2>Portfolio</h2>
-            <div>
-                <img src="" alt="">
-                <h4>Trinity Test</h4>
-                <p>The first detonation of a nuclear device conducted in New Mexico, July 16, 1945.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h4>Los Alamos Lab</h4>
-                <p>Primary facility for atomic bomb development under his direction.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h4>Scientific Legacy</h4>
-                <p>Oppenheimer left a complicated legacy as both pioneer and critic of nuclear arms.</p>
+        <section id="important-people">
+            <h2 style="text-align: center; margin: 50px 0 20px; font-size: 5vw; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);" data-aos="fade-up">Important Figures in Oppenheimer's Life</h2>
+            <div class="portfolio-grid">
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/leslie.jpg" alt="Leslie Groves">
+                    <div class="portfolio-text">
+                        <h4>Leslie Groves</h4>
+                        <p>Military director of the Manhattan Project who selected Oppenheimer as Los Alamos director.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/einstein.jpg" alt="Albert Einstein">
+                    <div class="portfolio-text">
+                        <h4>Albert Einstein</h4>
+                        <p>Though not part of the Manhattan Project, he deeply influenced Oppenheimer intellectually.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/isac.jpg" alt="Isidor Isaac Rabi">
+                    <div class="portfolio-text">
+                        <h4>Isidor Isaac Rabi</h4>
+                        <p>Nobel-winning physicist and close friend, Rabi advised the project and later opposed the H-bomb.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/niels.jpg" alt="Niels Bohr">
+                    <div class="portfolio-text">
+                        <h4>Niels Bohr</h4>
+                        <p>Danish Nobel laureate who visited Los Alamos and inspired many, including Oppenheimer.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/hans.jpg" alt="Hans Bethe">
+                    <div class="portfolio-text">
+                        <h4>Hans Bethe</h4>
+                        <p>Theoretical division head at Los Alamos who worked closely with Oppenheimer.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/ernest.jpg" alt="Ernest Lawrence">
+                    <div class="portfolio-text">
+                        <h4>Ernest Lawrence</h4>
+                        <p>Inventor of the cyclotron and key figure in uranium isotope separation at Berkeley.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/teller.jpg" alt="Edward Teller">
+                    <div class="portfolio-text">
+                        <h4>Edward Teller</h4>
+                        <p>Father of the hydrogen bomb and Oppenheimer's frequent adversary during the 1954 hearing.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/kitty.jpg" alt="Kitty Oppenheimer">
+                    <div class="portfolio-text">
+                        <h4>Kitty Oppenheimer</h4>
+                        <p>Oppenheimer's wife and personal support through turbulent phases of his career.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/frank.jpg" alt="Frank Oppenheimer">
+                    <div class="portfolio-text">
+                        <h4>Frank Oppenheimer</h4>
+                        <p>Robert's younger brother, also a physicist, who faced scrutiny during McCarthyism.</p>
+                    </div>
+                </div>
+
+                <div class="peoples-item" data-aos="fade-up">
+                    <img src="images/lewis.jpg" alt="Lewis Strauss">
+                    <div class="portfolio-text">
+                        <h4>Lewis Strauss</h4>
+                        <p>Chairman of the AEC who orchestrated the hearing that ended Oppenheimer's public role.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>Contact</h2>
-            <div>
-                <a href="#" title="Email">📧</a>
-                <a href="#" title="LinkedIn">💼</a>
-                <a href="#" title="Website">🌐</a>
+        <section id="portfolio">
+            <h2 style="text-align: center; margin: 20px 0 20px; font-size: 5vw; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);" data-aos="zoom-in">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="fade-up">
+                    <img src="images/NuclearBomb.webp" alt="Trinity Test">
+                    <div class="portfolio-text">
+                        <h4>Trinity Test</h4>
+                        <p>The first detonation of a nuclear device conducted in New Mexico, July 16, 1945.</p>
+                    </div>
+                    </div>
+
+                    <div class="portfolio-item" data-aos="fade-up">
+                    <img src="images/losalamos.jpg" alt="Los Alamos Lab">
+                    <div class="portfolio-text">
+                        <h4>Los Alamos Lab</h4>
+                        <p>Primary facility for atomic bomb development under his direction.</p>
+                    </div>
+                    </div>
+
+                    <div class="portfolio-item" data-aos="fade-up">
+                    <img src="images/legacy.png" alt="Scientific Legacy">
+                    <div class="portfolio-text">
+                        <h4>Scientific Legacy</h4>
+                        <p>Oppenheimer left a complicated legacy as both pioneer and critic of nuclear arms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <h2 style="text-align: center; margin: 50px 0 20px; font-size: 5vw; text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);">Contact</h2>
+            <div class="contact-container">
+                <p class="contact-description">
+                have a question, a project idea, or just want to say hi — I'm all ears.
+                Reach out my platforms below.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:stewartsidauruk007@gmail.com" target="_blank" class="contact-card">
+                        <i class="fa-solid fa-envelope" style="color: rgb(0, 0, 0);"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/stewartsidauruk" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-linkedin" style="color: rgb(0, 0, 0);"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/stewartsidauruk/?utm_source=ig_web_button_share_sheet" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-instagram" style="color: rgb(0, 0, 0);"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true, // Only animate once
+    });
+</script>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
 </body>
 </html>

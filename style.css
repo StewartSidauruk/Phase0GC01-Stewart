@@ -27,6 +27,10 @@ main {
     position: relative;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     z-index: 0;
@@ -66,7 +70,7 @@ body::before {
     z-index: 2;
 }
 
-.text, .mainText {
+.text, .mainText , .calledText{
     animation: riseFade 1.5s ease-out forwards;
 }
 
@@ -156,7 +160,6 @@ body::before {
 
 .text-about {
     font-size: 2vw;
-    padding: 0 20px 0 20px;
     margin-right: 5vw;
 }
 
@@ -178,7 +181,7 @@ body::before {
 }
 
 .journey-card:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .journey-card img {
@@ -198,4 +201,115 @@ body::before {
     padding: 0 15px 20px;
     color: #555;
     text-align: justify;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 40px 60px;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-text {
+    padding: 20px;
+}
+
+.portfolio-text h4 {
+    font-size: 1.3em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.portfolio-text p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+}
+
+.peoples-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.peoples-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 40px 20px 80px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 20px;
+    margin: 0 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-description {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 120px;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card i {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
